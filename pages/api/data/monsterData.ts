@@ -1,3 +1,5 @@
+const types = ['psychic', 'rock', 'bug', 'dragon', 'electra', 'fight', 'fire', 'ghost', 'grass', 'ground', 'ice', 'normal', 'poison', 'water']
+
 export const monsterData = [
     {   name: 'Aerodactyl',
         description: `A ferocious prehistoric creature that goes for the enemy's throat with its serrated saw-like fangs.`,
@@ -5,8 +7,7 @@ export const monsterData = [
         image2Url: '/images/aerodactyl/aerodactyl2.png',
         image3Url: '/images/aerodactyl/aerodactyl3.png',
         image4Url: '/images/aerodactyl/aerodactyl4.png',
-        image5Url: '/api/findthis.jpg',
-        backgroundImageUrl: '/images/rockType.jpg',
+        backgroundImageUrl: `/images/types/${types[1]}.jpg`,
         nationalNumber: 142,
         type: 'rock',
         hp: 60,
@@ -24,7 +25,7 @@ export const monsterData = [
         image2Url: '/images/abra/abra2.png',
         image3Url: '/images/abra/abra3.png',
         image4Url: '/images/abra/abra4.png',
-        backgroundImageUrl: '/images/rockType.jpg',
+        backgroundImageUrl: `/images/types/${types[1]}.jpg`,
         nationalNumber: 63,
         type: 'psychic',
         hp: 30,
