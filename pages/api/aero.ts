@@ -16,8 +16,18 @@ type Data = {
   
 // }
 
+// export default function handler(req:any, res:any) {
+//   res.end(
+//     `aero: ${
+//         res.status(200).json({ 
+//     name: 'aero', 
+//     imageUrl: '/images/aero.png' })
+//     }`
+//     )
+// }
 export default function handler(req:any, res:any) {
-  // const { pid } = req.query
+  console.log(res)
+  const { pid } = req.query
   res.end(
     `aero: ${
         res.status(200).json({ 
@@ -26,3 +36,4 @@ export default function handler(req:any, res:any) {
     }`
     )
 }
+

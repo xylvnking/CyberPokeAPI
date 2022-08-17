@@ -10,24 +10,39 @@ const Home: NextPage = () => {
 
 
   const [data, setData] = useState(null)
-  const [isLoading, setLoading] = useState(false)
-
+  const [data2, setData2] = useState(null)
+  const [isLoading, setLoading] = useState(true)
+  const [allData, setAllData] = useState(null)
+  
+  
   useEffect(() => {
     setLoading(true)
-    fetch('/api/aero')
+
+    fetch('/api/mons/allMonData')
+      .then((res) => res.json())
+      .then((allData) => {
+        setAllData(allData)
+        setLoading(false)
+        console.log(allData)
+      })
+    fetch('/api/mons/abra')
       .then((res) => res.json())
       .then((data) => {
         setData(data)
         setLoading(false)
-        console.log(data.imageUrl)
+        console.log(data)
       })
+      
+
+
   }, [])
+
   
 
   return (
     <div className={styles.container}>
       <Head>
-        <title>Cyberpunk PokeAPI</title>
+        <title>CyberPokeAPI</title>
         <meta name="description" content="An API serving data about cyberpunk style mons" />
         
         <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico?v=1.1" />
@@ -38,21 +53,38 @@ const Home: NextPage = () => {
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
-        <p className={styles.description}>
+        {/* <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.tsx</code>
-        </p>
+        </p> */}
         {/* <Image 
         src="/vercel.svg" 
         alt="Vercel Logo"
         
         /> */}
+
+
+         {/* {allData ? <Image src={allData[0].imageUrl}  */}
          {data ? <Image src={data.imageUrl} 
          
          alt="Vercel Logo" 
          width={'100%'} 
          height={'100%'} /> : ""}
-        <p></p>
+         {data ? <Image src={data.backgroundImageUrl} 
+         
+         alt="Vercel Logo" 
+         width={'100%'} 
+         height={'100%'} /> : ""}
+         
+
+
+          { data && <p>{data.abilities[0].name}</p>}
+          { data && <p>{data.description}</p>}
+          { allData && <p>{allData[1].name}</p>}
+          {/* { allData && <p>{data.description}</p>} */}
+          {/* <p>{data.name}</p> */}
+
+
 
         {/* <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
