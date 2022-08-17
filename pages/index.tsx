@@ -14,7 +14,7 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     setLoading(true)
-    fetch('/api/hello')
+    fetch('/api/aero')
       .then((res) => res.json())
       .then((data) => {
         setData(data)
