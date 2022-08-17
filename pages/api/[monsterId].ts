@@ -16,7 +16,7 @@ export default function handler(req:any, res:any) {
     
     switch(monsterId) {
 
-      case 'allMonsters':
+      case 'all':
           x = monsterData
           break;
 
