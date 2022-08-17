@@ -32,7 +32,7 @@ export default function handler(req:any, res:any) {
     `aero: ${
         res.status(200).json({ 
     name: 'aero', 
-    imageUrl: '/images/aero.png' })
+    imageUrl: 'https://cult-of-three.vercel.app/Images/brute.png' })
     }`
     )
 }

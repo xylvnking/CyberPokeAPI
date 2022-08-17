@@ -9,29 +9,43 @@ import React, {useState, useEffect} from 'react'
 const Home: NextPage = () => {
 
 
-  const [data, setData] = useState(null)
-  const [data2, setData2] = useState(null)
-  const [isLoading, setLoading] = useState(true)
-  const [allData, setAllData] = useState(null)
+  const [data, setData] = useState<any>(null)
+  const [data2, setData2] = useState<any>(null)
+  const [isLoading, setLoading] = useState<any>(true)
+  const [allData, setAllData] = useState<any>(null)
   
   
   useEffect(() => {
     setLoading(true)
 
-    fetch('/api/mons/allMonData')
-      .then((res) => res.json())
-      .then((allData) => {
-        setAllData(allData)
-        setLoading(false)
-        console.log(allData)
-      })
-    fetch('/api/mons/abra')
+    fetch('/api/allMonData')
       .then((res) => res.json())
       .then((data) => {
         setData(data)
         setLoading(false)
         console.log(data)
       })
+    fetch('/api/abra')
+      .then((res) => res.json())
+      .then((data2) => {
+        setData2(data2)
+        setLoading(false)
+        console.log(data2)
+      })
+    // fetch('/api/abra')
+    //   .then((res) => res.json())
+    //   .then((data) => {
+    //     setData(data)
+    //     setLoading(false)
+    //     // console.log(data)
+    //   })
+    // fetch('/api/aerodactyl')
+    //   .then((res) => res.json())
+    //   .then((data2) => {
+    //     setData2(data2)
+    //     setLoading(false)
+    //     // console.log(data2)
+    //   })
       
 
 
@@ -64,25 +78,14 @@ const Home: NextPage = () => {
         /> */}
 
 
-         {/* {allData ? <Image src={allData[0].imageUrl}  */}
-         {data ? <Image src={data.imageUrl} 
-         
-         alt="Vercel Logo" 
-         width={'100%'} 
-         height={'100%'} /> : ""}
-         {data ? <Image src={data.backgroundImageUrl} 
-         
-         alt="Vercel Logo" 
-         width={'100%'} 
-         height={'100%'} /> : ""}
-         
+         {/* {allData ? <Image src={data2.imageUrl} : " "} */}
 
 
-          { data && <p>{data.abilities[0].name}</p>}
-          { data && <p>{data.description}</p>}
-          { allData && <p>{allData[1].name}</p>}
-          {/* { allData && <p>{data.description}</p>} */}
-          {/* <p>{data.name}</p> */}
+
+         {data2 ? <Image src={data2.image1Url} 
+         alt="Vercel Logo" 
+         width={'100%'} 
+         height={'100%'} /> : ""} 
 
 
 
