@@ -39,3 +39,5 @@ I think it's interesting how it has a concept of the more popular monsters. It h
 - had a ton of trouble with cloyster, but eventually got it. i'm unsure if it starts to understand me more as i make requests in the same session
 
 - i'm always astounded how there's ALWAYS way to get what you're looking for. diglett is a good example
+
+- some keywords carry a lot more weight by default. for example if you put 'flying', almost every single render will have clouds in it, even if it's one word among a 10 word prompt. using the ::1 weight parameters really helps. For this project, the word 'cyberpunk' holds a LOT of weight, so I often got much better results by just including it as ::.2 and the others as high as ::2 sometimes. It also depends on whether you want your render to be 'influenced' by a keyword, or to literally be that. In my case I want a cyberpunk influence, not a subject, sort of.
