@@ -19,7 +19,7 @@ const Home: NextPage = () => {
   useEffect(() => {
     setLoading(true)
 
-    fetch('/api/allMonsters')
+    fetch('/api/all')
       .then((res) => res.json())
       .then((x) => {
         setData(x)

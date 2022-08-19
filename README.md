@@ -26,3 +26,16 @@ case 'E':
 
 [emoji favicons](https://favicon.io/)
 
+# midjourney
+
+I think it's interesting how it has a concept of the more popular monsters. It had zero cocnept of arbok, but knew exactly what beedrill was.
+
+- sometimes upscaling to max looks worse. i found myself saving the first iterationg of them to disk if i liked them before upscaling to max because the web client doesn't allow you to access the non-max version
+
+- you can have it use any image as a reference by including it as the first argument
+
+- writing 'cute' will basically always result in something small
+
+- had a ton of trouble with cloyster, but eventually got it. i'm unsure if it starts to understand me more as i make requests in the same session
+
+- i'm always astounded how there's ALWAYS way to get what you're looking for. diglett is a good example
