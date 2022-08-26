@@ -1,7 +1,12 @@
 {
   "/_app": "pages/_app.js",
+  "/api/1451001600000": "pages/api/1451001600000.js",
+  "/api/[monsterId]": "pages/api/[monsterId].js",
+  "/api/aero": "pages/api/aero.js",
+  "/api/data/monsterData": "pages/api/data/monsterData.js",
+  "/": "pages/index.html",
   "/_error": "pages/_error.js",
+  "/api/hello": "pages/api/hello.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/api/[monsterId]": "pages/api/[monsterId].js"
+  "/404": "pages/404.html"
 }

@@ -1,35 +1,85 @@
 "use strict";
-/*
- * ATTENTION: An "eval-source-map" devtool has been used.
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 (() => {
 var exports = {};
-exports.id = "pages/api/[monsterId]";
-exports.ids = ["pages/api/[monsterId]"];
+exports.id = 658;
+exports.ids = [658];
 exports.modules = {
 
-/***/ "(api)/./pages/api/[monsterId].ts":
-/*!**********************************!*\
-  !*** ./pages/api/[monsterId].ts ***!
-  \**********************************/
+/***/ 266:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ handler)\n/* harmony export */ });\n/* harmony import */ var _data_monsterData__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./data/monsterData */ \"(api)/./pages/api/data/monsterData.ts\");\n// Next.js API route support: https://nextjs.org/docs/api-routes/introduction\n\nfunction handler(req, res) {\n    const { monsterId  } = req.query;\n    function returnData() {\n        let x;\n        switch(monsterId){\n            case \"all\":\n                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData;\n                break;\n            case \"psychic\":\n                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.filter((x)=>x.type === \"psychic\");\n                break;\n            case \"rock\":\n                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.filter((x)=>x.type === \"rock\");\n                break;\n            case \"bug\":\n                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.filter((x)=>x.type === \"bug\");\n                break;\n            case \"dragon\":\n                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.filter((x)=>x.type === \"dragon\");\n                break;\n            case \"electra\":\n                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.filter((x)=>x.type === \"electra\");\n                break;\n            case \"fight\":\n                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.filter((x)=>x.type === \"fight\");\n                break;\n            case \"fire\":\n                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.filter((x)=>x.type === \"fire\");\n                break;\n            case \"ghost\":\n                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.filter((x)=>x.type === \"ghost\");\n                break;\n            case \"grass\":\n                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.filter((x)=>x.type === \"grass\");\n                break;\n            case \"ground\":\n                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.filter((x)=>x.type === \"ground\");\n                break;\n            case \"ice\":\n                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.filter((x)=>x.type === \"ice\");\n                break;\n            case \"normal\":\n                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.filter((x)=>x.type === \"normal\");\n                break;\n            case \"poison\":\n                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.filter((x)=>x.type === \"poison\");\n                break;\n            case \"water\":\n                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.filter((x)=>x.type === \"water\");\n                break;\n            case \"aerodactyl\":\n            case \"142\":\n                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.find((x)=>x.name === \"Aerodactyl\");\n                break;\n            case \"abra\":\n            case \"63\":\n                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.find((x)=>x.name === \"Abra\");\n        }\n        if (x) {\n            return res.status(200).json(x);\n        }\n    }\n    res.end(returnData());\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,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LEtBQUssS0FBSztnQkFDTkYsQ0FBQyxHQUFHUCwrREFBZ0IsQ0FBQ08sQ0FBQUEsQ0FBQyxHQUFJQSxDQUFDLENBQUNJLElBQUksS0FBSyxZQUFZLENBQUM7Z0JBQ2xELE1BQU07WUFFVixLQUFLLE1BQU0sQ0FBQztZQUNaLEtBQUssSUFBSTtnQkFDTEosQ0FBQyxHQUFHUCwrREFBZ0IsQ0FBQ08sQ0FBQUEsQ0FBQyxHQUFJQSxDQUFDLENBQUNJLElBQUksS0FBSyxNQUFNLENBQUM7U0FFL0M7UUFFRCxJQUFJSixDQUFDLEVBQUU7WUFDTCxPQUFPSixHQUFHLENBQUNTLE1BQU0sQ0FBQyxHQUFHLENBQUMsQ0FBQ0MsSUFBSSxDQUFDTixDQUFDLENBQUM7U0FDL0I7S0FDSjtJQUVESixHQUFHLENBQUNXLEdBQUcsQ0FFTFIsVUFBVSxFQUFFLENBRWI7Q0FJRiIsInNvdXJjZXMiOlsid2VicGFjazovL2N5YmVycG9rZWFwaS8uL3BhZ2VzL2FwaS9bbW9uc3RlcklkXS50cz82ODZiIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIE5leHQuanMgQVBJIHJvdXRlIHN1cHBvcnQ6IGh0dHBzOi8vbmV4dGpzLm9yZy9kb2NzL2FwaS1yb3V0ZXMvaW50cm9kdWN0aW9uXG5pbXBvcnQgdHlwZSB7IE5leHRBcGlSZXF1ZXN0LCBOZXh0QXBpUmVzcG9uc2UgfSBmcm9tICduZXh0J1xuaW1wb3J0IHsgbW9uc3RlckRhdGEgfSBmcm9tICcuL2RhdGEvbW9uc3RlckRhdGEnXG5cbnR5cGUgRGF0YSA9IHtcbiAgbmFtZTogc3RyaW5nLFxuICBpbWFnZVVybDogc3RyaW5nXG59XG5cblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gaGFuZGxlcihyZXE6YW55LCByZXM6YW55KSB7XG4gIGNvbnN0IHsgbW9uc3RlcklkIH0gPSByZXEucXVlcnlcblxuICBmdW5jdGlvbiByZXR1cm5EYXRhKCkge1xuICAgIGxldCB4OmFueVxuICAgIFxuICAgIHN3aXRjaChtb25zdGVySWQpIHtcblxuICAgICAgY2FzZSAnYWxsJzpcbiAgICAgICAgICB4ID0gbW9uc3RlckRhdGFcbiAgICAgICAgICBicmVhaztcblxuICAgICAgY2FzZSAncHN5Y2hpYyc6XG4gICAgICAgICAgeCA9IG1vbnN0ZXJEYXRhLmZpbHRlcih4ID0+IHgudHlwZSA9PT0gJ3BzeWNoaWMnKVxuICAgICAgICAgIGJyZWFrO1xuICAgICAgY2FzZSAncm9jayc6XG4gICAgICAgICAgeCA9IG1vbnN0ZXJEYXRhLmZpbHRlcih4ID0+IHgudHlwZSA9PT0gJ3JvY2snKVxuICAgICAgICAgIGJyZWFrO1xuICAgICAgY2FzZSAnYnVnJzpcbiAgICAgICAgICB4ID0gbW9uc3RlckRhdGEuZmlsdGVyKHggPT4geC50eXBlID09PSAnYnVnJylcbiAgICAgICAgICBicmVhaztcbiAgICAgIGNhc2UgJ2RyYWdvbic6XG4gICAgICAgICAgeCA9IG1vbnN0ZXJEYXRhLmZpbHRlcih4ID0+IHgudHlwZSA9PT0gJ2RyYWdvbicpXG4gICAgICAgICAgYnJlYWs7XG4gICAgICBjYXNlICdlbGVjdHJhJzpcbiAgICAgICAgICB4ID0gbW9uc3RlckRhdGEuZmlsdGVyKHggPT4geC50eXBlID09PSAnZWxlY3RyYScpXG4gICAgICAgICAgYnJlYWs7XG4gICAgICBjYXNlICdmaWdodCc6XG4gICAgICAgICAgeCA9IG1vbnN0ZXJEYXRhLmZpbHRlcih4ID0+IHgudHlwZSA9PT0gJ2ZpZ2h0JylcbiAgICAgICAgICBicmVhaztcbiAgICAgIGNhc2UgJ2ZpcmUnOlxuICAgICAgICAgIHggPSBtb25zdGVyRGF0YS5maWx0ZXIoeCA9PiB4LnR5cGUgPT09ICdmaXJlJylcbiAgICAgICAgICBicmVhaztcbiAgICAgIGNhc2UgJ2dob3N0JzpcbiAgICAgICAgICB4ID0gbW9uc3RlckRhdGEuZmlsdGVyKHggPT4geC50eXBlID09PSAnZ2hvc3QnKVxuICAgICAgICAgIGJyZWFrO1xuICAgICAgY2FzZSAnZ3Jhc3MnOlxuICAgICAgICAgIHggPSBtb25zdGVyRGF0YS5maWx0ZXIoeCA9PiB4LnR5cGUgPT09ICdncmFzcycpXG4gICAgICAgICAgYnJlYWs7XG4gICAgICBjYXNlICdncm91bmQnOlxuICAgICAgICAgIHggPSBtb25zdGVyRGF0YS5maWx0ZXIoeCA9PiB4LnR5cGUgPT09ICdncm91bmQnKVxuICAgICAgICAgIGJyZWFrO1xuICAgICAgY2FzZSAnaWNlJzpcbiAgICAgICAgICB4ID0gbW9uc3RlckRhdGEuZmlsdGVyKHggPT4geC50eXBlID09PSAnaWNlJylcbiAgICAgICAgICBicmVhaztcbiAgICAgIGNhc2UgJ25vcm1hbCc6XG4gICAgICAgICAgeCA9IG1vbnN0ZXJEYXRhLmZpbHRlcih4ID0+IHgudHlwZSA9PT0gJ25vcm1hbCcpXG4gICAgICAgICAgYnJlYWs7XG4gICAgICBjYXNlICdwb2lzb24nOlxuICAgICAgICAgIHggPSBtb25zdGVyRGF0YS5maWx0ZXIoeCA9PiB4LnR5cGUgPT09ICdwb2lzb24nKVxuICAgICAgICAgIGJyZWFrO1xuICAgICAgY2FzZSAnd2F0ZXInOlxuICAgICAgICAgIHggPSBtb25zdGVyRGF0YS5maWx0ZXIoeCA9PiB4LnR5cGUgPT09ICd3YXRlcicpXG4gICAgICAgICAgYnJlYWs7XG5cblxuICAgICAgY2FzZSAnYWVyb2RhY3R5bCc6XG4gICAgICBjYXNlICcxNDInOlxuICAgICAgICAgIHggPSBtb25zdGVyRGF0YS5maW5kKHggPT4geC5uYW1lID09PSAnQWVyb2RhY3R5bCcpXG4gICAgICAgICAgYnJlYWs7XG5cbiAgICAgIGNhc2UgJ2FicmEnOlxuICAgICAgY2FzZSAnNjMnOlxuICAgICAgICAgIHggPSBtb25zdGVyRGF0YS5maW5kKHggPT4geC5uYW1lID09PSAnQWJyYScpXG5cbiAgICAgIH1cblxuICAgICAgaWYgKHgpIHtcbiAgICAgICAgcmV0dXJuIHJlcy5zdGF0dXMoMjAwKS5qc29uKHgpXG4gICAgICB9IFxuICB9XG5cbiAgcmVzLmVuZChcbiAgICBcbiAgICByZXR1cm5EYXRhKClcblxuICApXG4gIFxuXG5cbn1cblxuIl0sIm5hbWVzIjpbIm1vbnN0ZXJEYXRhIiwiaGFuZGxlciIsInJlcSIsInJlcyIsIm1vbnN0ZXJJZCIsInF1ZXJ5IiwicmV0dXJuRGF0YSIsIngiLCJmaWx0ZXIiLCJ0eXBlIiwiZmluZCIsIm5hbWUiLCJzdGF0dXMiLCJqc29uIiwiZW5kIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./pages/api/[monsterId].ts\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ handler)
+/* harmony export */ });
+/* harmony import */ var _data_monsterData__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(529);
+// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-/***/ }),
+function handler(req, res) {
+    const { monsterId  } = req.query;
+    function returnData() {
+        let x;
+        switch(monsterId){
+            case "all":
+                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData;
+                break;
+            case "psychic":
+                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.filter((x)=>x.type === "psychic");
+                break;
+            case "rock":
+                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.filter((x)=>x.type === "rock");
+                break;
+            case "bug":
+                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.filter((x)=>x.type === "bug");
+                break;
+            case "dragon":
+                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.filter((x)=>x.type === "dragon");
+                break;
+            case "electra":
+                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.filter((x)=>x.type === "electra");
+                break;
+            case "fight":
+                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.filter((x)=>x.type === "fight");
+                break;
+            case "fire":
+                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.filter((x)=>x.type === "fire");
+                break;
+            case "ghost":
+                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.filter((x)=>x.type === "ghost");
+                break;
+            case "grass":
+                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.filter((x)=>x.type === "grass");
+                break;
+            case "ground":
+                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.filter((x)=>x.type === "ground");
+                break;
+            case "ice":
+                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.filter((x)=>x.type === "ice");
+                break;
+            case "normal":
+                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.filter((x)=>x.type === "normal");
+                break;
+            case "poison":
+                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.filter((x)=>x.type === "poison");
+                break;
+            case "water":
+                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.filter((x)=>x.type === "water");
+                break;
+            case "aerodactyl":
+            case "142":
+                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.find((x)=>x.name === "Aerodactyl");
+                break;
+            case "abra":
+            case "63":
+                x = _data_monsterData__WEBPACK_IMPORTED_MODULE_0__.monsterData.find((x)=>x.name === "Abra");
+        }
+        if (x) {
+            return res.status(200).json(x);
+        }
+    }
+    res.end(returnData());
+};
 
-/***/ "(api)/./pages/api/data/monsterData.ts":
-/*!***************************************!*\
-  !*** ./pages/api/data/monsterData.ts ***!
-  \***************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"monsterData\": () => (/* binding */ monsterData)\n/* harmony export */ });\nconst types = [\n    \"psychic\",\n    \"rock\",\n    \"bug\",\n    \"dragon\",\n    \"electra\",\n    \"fight\",\n    \"fire\",\n    \"ghost\",\n    \"grass\",\n    \"ground\",\n    \"ice\",\n    \"normal\",\n    \"poison\",\n    \"water\"\n];\nconst monsterData = [\n    {\n        name: \"Aerodactyl\",\n        description: `A ferocious prehistoric creature that goes for the enemy's throat with its serrated saw-like fangs.`,\n        image1Url: \"/images/aerodactyl/aerodactyl1.png\",\n        image2Url: \"/images/aerodactyl/aerodactyl2.png\",\n        image3Url: \"/images/aerodactyl/aerodactyl3.png\",\n        image4Url: \"/images/aerodactyl/aerodactyl4.png\",\n        backgroundImageUrl: `/images/types/${types[1]}.jpg`,\n        nationalNumber: 142,\n        type: \"rock\",\n        hp: 60,\n        abilities: [\n            {\n                name: \"Wing Attack\",\n                damage: 30\n            }\n        ]\n    },\n    {\n        name: \"Abra\",\n        description: `A ferocious prehistoric mon that goes for the enemy's throat with its serrated saw-like fangs.`,\n        image1Url: \"/images/abra/abra1.png\",\n        image2Url: \"/images/abra/abra2.png\",\n        image3Url: \"/images/abra/abra3.png\",\n        image4Url: \"/images/abra/abra4.png\",\n        backgroundImageUrl: `/images/types/${types[1]}.jpg`,\n        nationalNumber: 63,\n        type: \"psychic\",\n        hp: 30,\n        abilities: [\n            {\n                name: \"Psyshock\",\n                descriptopn: `Flip a coin. If heads, the Defending creature is now Paralyzed`,\n                damage: 10\n            }\n        ]\n    },\n    {\n        name: \"pika\",\n        imageUrl: \"/images/chu.png\"\n    }\n];\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wYWdlcy9hcGkvZGF0YS9tb25zdGVyRGF0YS50cy5qcyIsIm1hcHBpbmdzIjoiOzs7O0FBQUEsTUFBTUEsS0FBSyxHQUFHO0lBQUMsU0FBUztJQUFFLE1BQU07SUFBRSxLQUFLO0lBQUUsUUFBUTtJQUFFLFNBQVM7SUFBRSxPQUFPO0lBQUUsTUFBTTtJQUFFLE9BQU87SUFBRSxPQUFPO0lBQUUsUUFBUTtJQUFFLEtBQUs7SUFBRSxRQUFRO0lBQUUsUUFBUTtJQUFFLE9BQU87Q0FBQztBQUV2SSxNQUFNQyxXQUFXLEdBQUc7SUFDdkI7UUFBSUMsSUFBSSxFQUFFLFlBQVk7UUFDbEJDLFdBQVcsRUFBRSxDQUFDLG1HQUFtRyxDQUFDO1FBQ2xIQyxTQUFTLEVBQUUsb0NBQW9DO1FBQy9DQyxTQUFTLEVBQUUsb0NBQW9DO1FBQy9DQyxTQUFTLEVBQUUsb0NBQW9DO1FBQy9DQyxTQUFTLEVBQUUsb0NBQW9DO1FBQy9DQyxrQkFBa0IsRUFBRSxDQUFDLGNBQWMsRUFBRVIsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQztRQUNuRFMsY0FBYyxFQUFFLEdBQUc7UUFDbkJDLElBQUksRUFBRSxNQUFNO1FBQ1pDLEVBQUUsRUFBRSxFQUFFO1FBQ05DLFNBQVMsRUFBRTtZQUNUO2dCQUNFVixJQUFJLEVBQUUsYUFBYTtnQkFDbkJXLE1BQU0sRUFBRSxFQUFFO2FBQ1g7U0FDRjtLQUNKO0lBRUQ7UUFBSVgsSUFBSSxFQUFFLE1BQU07UUFDWkMsV0FBVyxFQUFFLENBQUMsOEZBQThGLENBQUM7UUFDN0dDLFNBQVMsRUFBRSx3QkFBd0I7UUFDbkNDLFNBQVMsRUFBRSx3QkFBd0I7UUFDbkNDLFNBQVMsRUFBRSx3QkFBd0I7UUFDbkNDLFNBQVMsRUFBRSx3QkFBd0I7UUFDbkNDLGtCQUFrQixFQUFFLENBQUMsY0FBYyxFQUFFUixLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsSUFBSSxDQUFDO1FBQ25EUyxjQUFjLEVBQUUsRUFBRTtRQUNsQkMsSUFBSSxFQUFFLFNBQVM7UUFDZkMsRUFBRSxFQUFFLEVBQUU7UUFDTkMsU0FBUyxFQUFFO1lBQ1Q7Z0JBQ0VWLElBQUksRUFBRSxVQUFVO2dCQUNoQlksV0FBVyxFQUFFLENBQUMsOERBQThELENBQUM7Z0JBQzdFRCxNQUFNLEVBQUUsRUFBRTthQUNYO1NBQ0Y7S0FDSjtJQUNEO1FBQ0lYLElBQUksRUFBRSxNQUFNO1FBQ1phLFFBQVEsRUFBRSxpQkFBaUI7S0FDOUI7Q0FDRiIsInNvdXJjZXMiOlsid2VicGFjazovL2N5YmVycG9rZWFwaS8uL3BhZ2VzL2FwaS9kYXRhL21vbnN0ZXJEYXRhLnRzPzdiMTEiXSwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgdHlwZXMgPSBbJ3BzeWNoaWMnLCAncm9jaycsICdidWcnLCAnZHJhZ29uJywgJ2VsZWN0cmEnLCAnZmlnaHQnLCAnZmlyZScsICdnaG9zdCcsICdncmFzcycsICdncm91bmQnLCAnaWNlJywgJ25vcm1hbCcsICdwb2lzb24nLCAnd2F0ZXInXVxuXG5leHBvcnQgY29uc3QgbW9uc3RlckRhdGEgPSBbXG4gICAgeyAgIG5hbWU6ICdBZXJvZGFjdHlsJyxcbiAgICAgICAgZGVzY3JpcHRpb246IGBBIGZlcm9jaW91cyBwcmVoaXN0b3JpYyBjcmVhdHVyZSB0aGF0IGdvZXMgZm9yIHRoZSBlbmVteSdzIHRocm9hdCB3aXRoIGl0cyBzZXJyYXRlZCBzYXctbGlrZSBmYW5ncy5gLFxuICAgICAgICBpbWFnZTFVcmw6ICcvaW1hZ2VzL2Flcm9kYWN0eWwvYWVyb2RhY3R5bDEucG5nJyxcbiAgICAgICAgaW1hZ2UyVXJsOiAnL2ltYWdlcy9hZXJvZGFjdHlsL2Flcm9kYWN0eWwyLnBuZycsXG4gICAgICAgIGltYWdlM1VybDogJy9pbWFnZXMvYWVyb2RhY3R5bC9hZXJvZGFjdHlsMy5wbmcnLFxuICAgICAgICBpbWFnZTRVcmw6ICcvaW1hZ2VzL2Flcm9kYWN0eWwvYWVyb2RhY3R5bDQucG5nJyxcbiAgICAgICAgYmFja2dyb3VuZEltYWdlVXJsOiBgL2ltYWdlcy90eXBlcy8ke3R5cGVzWzFdfS5qcGdgLFxuICAgICAgICBuYXRpb25hbE51bWJlcjogMTQyLFxuICAgICAgICB0eXBlOiAncm9jaycsXG4gICAgICAgIGhwOiA2MCxcbiAgICAgICAgYWJpbGl0aWVzOiBbXG4gICAgICAgICAge1xuICAgICAgICAgICAgbmFtZTogJ1dpbmcgQXR0YWNrJyxcbiAgICAgICAgICAgIGRhbWFnZTogMzBcbiAgICAgICAgICB9XG4gICAgICAgIF1cbiAgICB9LFxuICBcbiAgICB7ICAgbmFtZTogJ0FicmEnLFxuICAgICAgICBkZXNjcmlwdGlvbjogYEEgZmVyb2Npb3VzIHByZWhpc3RvcmljIG1vbiB0aGF0IGdvZXMgZm9yIHRoZSBlbmVteSdzIHRocm9hdCB3aXRoIGl0cyBzZXJyYXRlZCBzYXctbGlrZSBmYW5ncy5gLFxuICAgICAgICBpbWFnZTFVcmw6ICcvaW1hZ2VzL2FicmEvYWJyYTEucG5nJyxcbiAgICAgICAgaW1hZ2UyVXJsOiAnL2ltYWdlcy9hYnJhL2FicmEyLnBuZycsXG4gICAgICAgIGltYWdlM1VybDogJy9pbWFnZXMvYWJyYS9hYnJhMy5wbmcnLFxuICAgICAgICBpbWFnZTRVcmw6ICcvaW1hZ2VzL2FicmEvYWJyYTQucG5nJyxcbiAgICAgICAgYmFja2dyb3VuZEltYWdlVXJsOiBgL2ltYWdlcy90eXBlcy8ke3R5cGVzWzFdfS5qcGdgLFxuICAgICAgICBuYXRpb25hbE51bWJlcjogNjMsXG4gICAgICAgIHR5cGU6ICdwc3ljaGljJyxcbiAgICAgICAgaHA6IDMwLFxuICAgICAgICBhYmlsaXRpZXM6IFtcbiAgICAgICAgICB7XG4gICAgICAgICAgICBuYW1lOiAnUHN5c2hvY2snLFxuICAgICAgICAgICAgZGVzY3JpcHRvcG46IGBGbGlwIGEgY29pbi4gSWYgaGVhZHMsIHRoZSBEZWZlbmRpbmcgY3JlYXR1cmUgaXMgbm93IFBhcmFseXplZGAsXG4gICAgICAgICAgICBkYW1hZ2U6IDEwXG4gICAgICAgICAgfVxuICAgICAgICBdXG4gICAgfSxcbiAgICB7XG4gICAgICAgIG5hbWU6ICdwaWthJywgXG4gICAgICAgIGltYWdlVXJsOiAnL2ltYWdlcy9jaHUucG5nJ1xuICAgIH1cbiAgXSJdLCJuYW1lcyI6WyJ0eXBlcyIsIm1vbnN0ZXJEYXRhIiwibmFtZSIsImRlc2NyaXB0aW9uIiwiaW1hZ2UxVXJsIiwiaW1hZ2UyVXJsIiwiaW1hZ2UzVXJsIiwiaW1hZ2U0VXJsIiwiYmFja2dyb3VuZEltYWdlVXJsIiwibmF0aW9uYWxOdW1iZXIiLCJ0eXBlIiwiaHAiLCJhYmlsaXRpZXMiLCJkYW1hZ2UiLCJkZXNjcmlwdG9wbiIsImltYWdlVXJsIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./pages/api/data/monsterData.ts\n");
 
 /***/ })
 
@@ -40,7 +90,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 var __webpack_require__ = require("../../webpack-api-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__("(api)/./pages/api/[monsterId].ts"));
+var __webpack_exports__ = __webpack_require__.X(0, [529], () => (__webpack_exec__(266)));
 module.exports = __webpack_exports__;
 
 })();
