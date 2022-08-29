@@ -7,6 +7,10 @@ type Data = {
   imageUrl: string
 }
 
+// i need to watch some stuff comparing express and next after taking that express course
+// cause like - are post and gets to the same thing? can i differentiate? of course i can but how?
+// is my next project running the same way and express server is? what are edge functions?
+// i can complete this project easily, but I need to take the time to understand these things
 
 export default function handler(req:any, res:any) {
   const { monsterId } = req.query
